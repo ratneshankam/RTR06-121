@@ -1,0 +1,34 @@
+This gives error 
+  g++ helloworld.o -L /usr/local/lib -lglut -lGLU -lGL -o HelloworldApp
+
+  brew install freeglut
+
+  brew info freeglut
+
+Compile: g++ -c /Users/apple/Documents/Ratnesh_Ankam/Doc_Ratnesh/RTR/helloworld.cpp -I /usr/local/include
+
+Link with Frameworks: g++ helloworld.o -L /usr/local/lib -lglut -framework OpenGL -o HelloworldApp
+
+Run the Program: ./HelloworldApp
+
+**************************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************************
+**************************************************************************************************************************************************************************************
+
+1. VS-2022
+2. freeglut dir on C
+
+indentation -> understandable separation line and paragraph by VS
+
+
+dos key feature --> previous cmd by previous key
+
+
+Commands for mac
+--->  clang OGL.c -o OGLApp -I/usr/local/include -L/usr/local/lib -lglut -framework OpenGL
+--->  ./OGLApp 
+freeglut (./OGLApp): failed to open display ''
+To Resolve:
+Inbetween ---> Install XQuartz: Download and install XQuartz from https://www.xquartz.org.
+Restart the Mac after Installation: This ensures that XQuartz is properly set up.
+---> ./OGLApp (works fine)

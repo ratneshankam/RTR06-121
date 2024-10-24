@@ -1,0 +1,34 @@
+    https://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@github.com/deepak-csols/digirestro-q-app.git  https://ratnesh-concoursesols@github.com/deepak-csols/digirestro-q-app.git  -build            git checkout app_uat  git fetch --all       --force  pwd
+
+  brew install cmatrix
+  cmatrix
+
+  uname -a
+
+  gcc helloworld.c
+  ./a.out
+  c1.exe /c /EHsc /I \Users\apple\Documents\Ratnesh_Ankam\Doc_Ratnesh\RTR\include helloworld.cpp
+  brew install freeglut\n
+  g++ -c /Users/apple/Documents/Ratnesh_Ankam/Doc_Ratnesh/RTR/helloworld.cpp -I /usr/local/include\n
+  g++ helloworld.o -L /usr/local/lib -lglut -lGLU -lGL -o HelloworldApp\n
+  g++ helloworld.o -L /usr/local/lib -lglut -framework OpenGL -o HelloworldApp\n
+  brew info freeglut\n
+  ./HelloworldApp\n
+  g++ -c /Users/apple/Documents/Ratnesh_Ankam/Doc_Ratnesh/RTR/OGL.c -I /usr/local/include
+  gcc -o OGLApp OGL.c -framework OpenGL -framework GLUT
+   
+  clang -arch arm64 OGL.c -o OGLApp -framework OpenGL -framework GLUT
+  clang OGL.c -o OGLApp -framework OpenGL -framework GLUT\n
+  clang -o OGL OGL.c -framework GLUT
+  clang OGL.c -o OGLApp -framework OpenGL -framework GLUT
+  clang OGL.c -o OGLApp -I/usr/local/include -L/usr/local/lib -lglut -framework OpenGL\n
+  ./OGLApp\n
+  
+  
+  
+  clang diya.c -o diyapp -I/usr/local/include -L/usr/local/lib -lglut -framework OpenGL
+  ./diyapp
+  clang catimg.c -o catapp -I/usr/local/include -L/usr/local/lib -lglut -framework OpenGL
+  ./catapp
+   clang diwali.c -o diwaliApp -I/usr/local/include -L/usr/local/lib -lglut -framework OpenGL
+   ./diwaliApp

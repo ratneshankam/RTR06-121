@@ -1,0 +1,60 @@
+* **SDK --> Software Development Kit**
+
+* MUST
+1. compiler, linker/interpreter, loader, assember, disassembler, debugger    (Together Called ToolChain)
+2. header files / namespaces / packages
+3. API libraries (2 types --> 1. Procedural     2. Object Oriented)
+4. Documentation
+
+* OPTIONAL
+5. Runtime Environment / Virtual Machine
+6. IDE (Integrated Development Environment)
+
+----------------------------------------------------------------------------------------------------------------------------
+
+ToolChain (sakhali madhe sahitya vaparne)
+
+1. Compiler :
+    Is a tool je Human Understandable format madhla code Machine Understandable (note it can readable) format madhe convert karta (Object Code --> (.obj))
+    Common Object File Format (COFF)
+    Data + Text 
+    Book : Compiler Design by Aho Ulman  (DragonBook msg by YogeshSir)
+    cl.exe /c /EHsc /I C:\freeglut\include OGL.cpp
+    (Program Hard Disk var run hot nahi)
+    (Program Memory madhe run hoto (free electronic space))
+    (Program CPU/Machine run karta)
+    (Program Input/Output madhe interact karta)
+    Operating system sarkhi entity lagte ---> Like Loader
+2. Linker/Interpreter :
+    Is a tool je Machine Understandable code to Operating System Understandable madhe convert karta
+    Grouped of Instructions --> Called Functions
+    link.exe OGL.obj /LIBPATH:C:\freeglut\lib\x64 /SUBSYSTEM:CONSOLE
+    Is a tool je Object Code madhla Executable Code madhe convert karta
+    
+    static linking library cha code physically chitakavali jate
+    dynamic linking library cha code lagel tevha use kar (to OS)
+
+    In case of Interpreter OS chi garaj lagat nahi
+3. Loader/ OS:
+    loader la OS
+    Entc Baremetal LDScript concern with Linker and Loader
+
+    Magic Number
+    Windows MZ (Mark Zakowski)
+    Linux ELF (Executable Linkable Format / File Format)
+    MacOS FEEDFACF (It's a Hexadecimal format)
+
+    Program madhlya funcions la run honya sathi jaga deto
+
+    OGL.c --> OGL.obj --> OGL.exe
+
+
+4. Assembler :
+
+5. Disassembler :
+
+6. Debugger :
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
