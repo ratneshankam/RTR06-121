@@ -6,7 +6,7 @@
 BOOL bFullScreen = FALSE;
 
 // Entrypoint Function
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 { // sir called it as a mahirapi kaunsh
     // Local Function Declarations
     int initialize(void);
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 
-    glutInitWindowSize(1350, 900);
+    glutInitWindowSize(1350, 735);
     glutInitWindowPosition(0, 0);
     glutCreateWindow("Ratnesh Kiran Ankam");
 
