@@ -1,9 +1,9 @@
 // Header Files
 #include <GL/freeglut.h>
-#include <stdbool.h> // For bool, true, false
+// #include <stdbool.h> // For BOOL, true, FALSE
 
 // Global Variables Declarations
-bool bFullScreen = false;
+BOOL bFullScreen = FALSE;
 
 // Entrypoint Function
 int main(int argc, char *argv[])
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 
     glutInitWindowSize(1350, 900);
-    glutInitWindowPosition(200, 0);
+    glutInitWindowPosition(0, 0);
     glutCreateWindow("Ratnesh Kiran Ankam");
 
     initialize();
@@ -80,15 +80,15 @@ void keyboard(unsigned char key, int x, int y)
         break;
     case 'F':
     case 'f':
-        if (bFullScreen == false)
+        if (bFullScreen == FALSE)
         {
             glutFullScreen();
-            bFullScreen = true;
+            bFullScreen = TRUE;
         }
         else
         {
             glutLeaveFullScreen();
-            bFullScreen = false;
+            bFullScreen = FALSE;
         }
         break;
     default:
