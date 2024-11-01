@@ -1,12 +1,13 @@
 // Header Files
 #include <GL/freeglut.h>
+#include <stdbool.h> // For bool, true, false
 
 // Global Variables Declarations
-BOOL bFullScreen = FALSE;
+bool bFullScreen = false;
 
 // Entrypoint Function
 int main(int argc, char *argv[])
-{ // sir called it as a mahirapi kaunsh
+{
     // Local Function Declarations
     int initialize(void);
     void resize(int, int);
@@ -20,9 +21,9 @@ int main(int argc, char *argv[])
 
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 
-    glutInitWindowSize(1050, 735);
+    glutInitWindowSize(950, 735);
     glutInitWindowPosition(0, 0);
-    glutCreateWindow("Ratnesh Ankam 121 - Diwali Theme");
+    glutCreateWindow("Ratnesh Kiran Ankam");
 
     initialize();
 
@@ -57,6 +58,54 @@ void display(void)
 {
     // Code
     glClear(GL_COLOR_BUFFER_BIT);
+    
+    // Gradient Background Start
+    glBegin(GL_QUADS);
+    glColor3f(.2f, .0f, .9f);
+    glVertex2f(-100.0f, 60.0f);
+    glColor3f(.2f, .0f, .9f);
+    glVertex2f(100.0f, 60.0f);
+    glColor3f(.1f, .1f, .1f);
+    glVertex2f(100.0f, 100.0f);
+    glColor3f(.1f, .1f, .1f);
+    glVertex2f(-100.0f, 100.0f);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3f(.2f, .0f, .9f);
+    glVertex2f(-100.0f, 60.0f);
+    glColor3f(.2f, .0f, .9f);
+
+    glVertex2f(100.0f, 60.0f);
+    glColor3f(0.01f, 0.01f, .15f);
+
+    glVertex2f(100.0f, 30.0f);
+    glColor3f(.9f, .2f, .3f);
+
+    glVertex2f(-100.0f, 30.0f);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3f(.9f, .2f, .3f);
+    glVertex2f(-100.0f, 30.0f);
+    glColor3f(0.01f, 0.01f, .15f);
+    glVertex2f(100.0f, 30.0f);
+    glColor3f(0.01f, 0.01f, .15f);
+
+    glVertex2f(-100.0f, -100.0f);
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+    glColor3f(0.01f, 0.01f, .15f);
+    glVertex2f(100.0f, 30.0f);
+    glColor3f(0.01f, 0.01f, .15f);
+
+    glVertex2f(-100.0f, -100.0f);
+    glColor3f(0.01f, 0.01f, .15f);
+
+    glVertex2f(100.0f, -100.0f);
+    glEnd();
+    // Gradient Background End
 
     // Top Line
     glBegin(GL_LINES);
@@ -497,12 +546,12 @@ void display(void)
 
     // Wall
     glBegin(GL_LINES);
-    glColor3f(0.3f, 0.4f, 0.5f);
+    glColor3f(1.f, 1.f, 1.f);
     glVertex2f(-55.0f, 20.0f);
     glVertex2f(-55.0f, -10.0f);
     glEnd();
     glBegin(GL_LINES);
-    glColor3f(0.3f, 0.4f, 0.5f);
+    glColor3f(1.f, 1.f, 1.f);
     glVertex2f(-58.0f, -10.0f);
     glVertex2f(-35.0f, -10.0f);
     glVertex2f(-35.0f, -10.0f);
@@ -546,7 +595,7 @@ void display(void)
     glEnd();
 
     glBegin(GL_LINES);
-    glColor3f(0.3f, 0.4f, 0.5f);
+    glColor3f(1.f, 1.f, 1.f);
     glVertex2f(-64.0f, -36.0f);
     glVertex2f(-90.0f, -44.0f);
     glVertex2f(-90.0f, -44.0f);
@@ -1668,8 +1717,9 @@ void display(void)
     glVertex2f(10.0f, -10.0f);
     glEnd();
     glBegin(GL_POLYGON);
-    glColor3f(0.01f, 0.01f, .15f);
+    glColor3f(.8f, .4f, .5f);
     glVertex2f(0.0f, 10.0f);
+    glColor3f(0.01f, 0.01f, .15f);
     glVertex2f(5.0f, 10.0f);
     glVertex2f(5.0f, 2.5f);
     glVertex2f(0.0f, 2.5f);
@@ -1786,8 +1836,9 @@ void display(void)
     glEnd();
 
     glBegin(GL_POLYGON);
-    glColor3f(0.01f, 0.01f, .15f);
+    glColor3f(.8f, .4f, .5f);
     glVertex2f(5.0f, -25.0f);
+    glColor3f(0.01f, 0.01f, .15f);
     glVertex2f(0.0f, -25.0f);
     glVertex2f(0.0f, -35.0f);
     glVertex2f(2.0f, -35.0f);
@@ -2166,9 +2217,9 @@ void display(void)
     glEnd();
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, 1.f, 0.8f);
-    glVertex2f(80.1f, 41.5f);
-    glVertex2f(78.5f, 41.0f);
-    glVertex2f(79.9f, 40.0f);
+    glVertex2f(80.1f,41.5f);
+    glVertex2f(78.5f,41.0f);
+    glVertex2f(79.9f,40.0f);
     glEnd();
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, 1.f, 0.8f);
@@ -2265,7 +2316,7 @@ void display(void)
     glVertex2f(21.f, 44.0f);
     glEnd();
     // *********************************************************************************
-
+    
     // Paus-1
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, .0f, 0.2f);
@@ -2432,17 +2483,17 @@ void display(void)
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, 1.f, 0.1f);
     glVertex2f(78.f, -75.0f);
-    glVertex2f(80.5f, -72.0f);
-    glVertex2f(76.0f, -72.0f);
+    glVertex2f(80.5f,-72.0f);
+    glVertex2f(76.0f,-72.0f);
     glEnd();
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, 1.f, 0.1f);
     glVertex2f(78.f, -70.5f);
-    glVertex2f(80.5f, -74.0f);
-    glVertex2f(76.0f, -74.0f);
+    glVertex2f(80.5f,-74.0f);
+    glVertex2f(76.0f,-74.0f);
     glEnd();
     // ************************* ************************* ************************* ************************* *************************
-
+     
     // LakshmiBomb-2
     glBegin(GL_QUADS);
     glColor3f(.6f, .8f, 0.4f);
@@ -2496,14 +2547,14 @@ void display(void)
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, 1.f, 0.1f);
     glVertex2f(-18.f, -75.0f);
-    glVertex2f(-20.5f, -72.0f);
-    glVertex2f(-16.0f, -72.0f);
+    glVertex2f(-20.5f,-72.0f);
+    glVertex2f(-16.0f,-72.0f);
     glEnd();
     glBegin(GL_TRIANGLES);
     glColor3f(1.f, 1.f, 0.1f);
     glVertex2f(-18.f, -70.5f);
-    glVertex2f(-20.5f, -74.0f);
-    glVertex2f(-16.0f, -74.0f);
+    glVertex2f(-20.5f,-74.0f);
+    glVertex2f(-16.0f,-74.0f);
     glEnd();
     // ***************************************************************************************
 
@@ -2632,15 +2683,15 @@ void keyboard(unsigned char key, int x, int y)
         break;
     case 'F':
     case 'f':
-        if (bFullScreen == FALSE)
+        if (bFullScreen == false)
         {
             glutFullScreen();
-            bFullScreen = TRUE;
+            bFullScreen = true;
         }
         else
         {
             glutLeaveFullScreen();
-            bFullScreen = FALSE;
+            bFullScreen = false;
         }
         break;
     default:

@@ -7,7 +7,7 @@ bool bFullScreen = false;
 
 // Entrypoint Function
 int main(int argc, char *argv[])
-{ // sir called it as a mahirapi kaunsh
+{
     // Local Function Declarations
     int initialize(void);
     void resize(int, int);
