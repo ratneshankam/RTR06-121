@@ -60,11 +60,11 @@ int main(void)
 {
 
 	// local constant declarations
-	const double epsilon = 0.000001;
+	const double epsilon_ra = 0.000001;
 
 	// code
 	printf("\n\n");
-	printf("Local constant epsilon = %lf\n\n", epsilon);
+	printf("Local constant epsilon = %lf\n\n", epsilon_ra);
 
 	printf("SUNDAY is day number = %d\n", SUNDAY);
 	printf("MONDAY is the day number = %d\n", MONDAY);
@@ -102,7 +102,7 @@ int main(void)
 	printf("Value of False is = %d\n", TRUE);
 
 	printf("My_pi Macro value = %.101f\n\n", MY_PI);
-	
+
 	// pi * r * r = area of circle of radius 'r'
 	printf("Area of Circle of Radius 2 units = %f\n\n", (MY_PI * 2.0f * 2.0f));
 
