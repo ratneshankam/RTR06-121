@@ -8,7 +8,7 @@ int main(void)
     int i_ra = 1;
     do
     {
-        printf("%d\n", i_ra_ra);
+        printf("%d\n", i_ra);
         i_ra++;
     } while (i_ra <= 10);
     printf("End Of Increment Do-While Loop\n");

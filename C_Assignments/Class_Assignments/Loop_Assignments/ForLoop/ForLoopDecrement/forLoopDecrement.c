@@ -7,7 +7,7 @@ int main(void)
     printf("Decrement For Loop\n");
     for (int i_ra = 10; i_ra >= 1; i_ra--)
     {
-        printf("%d\n", i_ra_ra);
+        printf("%d\n", i_ra);
     }
     printf("End Of Decrement For Loop\n");
 

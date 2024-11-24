@@ -8,7 +8,7 @@ int main(void)
     for (int i_ra = 1; i_ra <= 10; i_ra++)
     {
 
-        printf("%d\n", i_ra_ra);
+        printf("%d\n", i_ra);
     }
     printf("End Of Increment For Loop\n");
 
