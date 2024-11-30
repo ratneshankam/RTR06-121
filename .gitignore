@@ -1,6 +1,8 @@
-# Ignore vs code file
+# Ignore vs code folders
 .vs/
 .vscode/
-.obj
-.exe
-.pdf
+
+# Ignore this extention files
+*.obj
+*.exe
+*.pdf
