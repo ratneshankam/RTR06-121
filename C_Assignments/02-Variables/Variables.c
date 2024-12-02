@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void_ra)
+int main(void)
 {
 	// variable declarations
 	int i_ra = 5;
