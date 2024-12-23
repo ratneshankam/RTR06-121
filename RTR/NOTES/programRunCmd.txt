@@ -21,7 +21,7 @@ Run the Program: ./HelloworldApp
 indentation -> understandable separation line and paragraph by VS
 
 
-dos key feature --> previous cmd by (up arrow ^ key) previous key
+dos key feature --> previous cmd by previous key
 
 
 Commands for mac
@@ -32,14 +32,3 @@ To Resolve:
 Inbetween ---> Install XQuartz: Download and install XQuartz from https://www.xquartz.org.
 Restart the Mac after Installation: This ensures that XQuartz is properly set up.
 ---> ./OGLApp (works fine)
-
-Commands for Windows 
-
-** Check files with dir/ls
-
----> To Compile
-cl.exe /c /EHsc /I C:\freeglut\include OGL.cpp
----> To Link the Object code
-link.exe OGL.obj /LIBPATH:C:\freeglut\lib\x64 /SUBSYSTEM:CONSOLE
----> To Run
-OGL.exe  /  OGL

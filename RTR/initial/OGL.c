@@ -7,7 +7,7 @@ bool bFullScreen = false; // Use bool instead of BOOL
 
 // Entry-point function
 int main(int argc, char *argv[])
-{  // sir called it as a mahirapi kaunsh
+{
     // Function declarations
     int initialize(void);
     void resize(int, int);

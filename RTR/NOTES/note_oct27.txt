@@ -1,0 +1,118 @@
+win32 SDK
+
+1. toolchain --> cl.exe, link.exe, winOS, Masm, dasm, windbg
+2. header files and namespaces (c/c++)
+3. api libraries 
+procedural user32.dll, gdi32.dll, kernel32.dll
+object-oriented MFC
+*********object-oriented ATL
+4. documentation --->  MSDN
+5. RE / VM   ---> Native MSVCR
+6. IDE --> visual studio
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Java SDK
+
+1. toolchain --> javac.exe, java.exe, bytecode, decompiler, jdb
+2. packages
+3. API library
+object-oriented --> JFC
+procedural (nahi) X
+4. documentation --> Oracle site Java documentation
+5. RE / VM  --> JVM    ( JRE = JVM + RT.jar + Tools.jar)
+                                \
+                                 \ > jvm.dll
+borland visual studio
+vatcom visual studio
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+.Net SDK
+
+1. toolchain --> 
+compilers : csc.exe, jsc.exe, vjc.exe, vbc.exe, aspnet.exe
+ *full forms               (c sharp) (java script) (visual java) (visual basic) ()
+Linker : al.exe
+Assembler : ilasm (il --> itermediate language)
+DisAssembler : ildasm
+Debugger : windbg
+
+56 programming language (sir known 36)   i.e it is having 56 compilers too BUT having only one linker called CLR because it is having only WinOS
+* works on others OS only with WINE ( windows emulator )  --> It uses MONO as a Virtual Machine
+---> Cigwin, MCIS
+
+Ada.net
+APL.net
+ALGOL.net
+Delphi.net
+Eiffel.net
+Haskell.net
+Caml.net
+Cobol.net
+CompenetPascal.net
+Mandrain
+ML.net
+Mercury.net
+Fortran.net
+Forth.net
+LISP.net
+LUA.net
+Lexico.net
+LOGO.net
+Oberon.net
+perl.net
+python.net
+PHP.net
+Ruby.net
+Pascal.net
+Smalltalk.net
+Scheme.net
+Scheme.net
+TCL/JK.net
+
+Main Stdandard
+------> C++.net, jscript.net, ilasm.net, vjc.net, j#.net, C#.net, asp.net, VB.net
+
+**BOOK**
+(CLR VIA C# BY JEFRI RISTER)
+
+
+
+2. namespaces
+3. API LIbrary 
+object-oriented --> FCL (framework class library)
+4. documentation --> MSDN
+
+5. CLR (Common Language Runtime) -> (RE and VM called both)
+MSCorrr.dll
+miscroft common object runtime engine
+fasade (english name called 'mukhavata')
+MSCorwks.dll (workstation)
+MSCorSvr.dll (server)
+
+(why it named CLR because multiple language it is having same RE/VM)
+
+6. IDE (visual studio)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+sparc (sun micro system)
+(sun processor architecture)
+after Stdandardization
+(scalable processor architecture)
+
+
+भव अभ्यसनम् अभ्यस शिलानाम सतत् क्रिया
+
+
+
+                        compiler  |native machine|    linker                             loader          | ram                           |
+Native  --> source    ----------->|  object code |  ------------>  executable code   --------------->    | | Stack / data / text(instr)| |
+            code        cl.exe    |   COFF       |    link.exe       OGL.exe               OS            | OS     -----^                 |
+            (OGL.c)               |  OGL.obj     |
+
+--------> CPU
+
+
+

@@ -1,0 +1,32 @@
+
+
+Xparc (xerox palo alto research center)
+SGI (silicon graphics international)
+SGI developed machine -> IRIX
+-> Dinasore (Jurasic Park)
+-> made with IRIS GL (also called IGL)
+-> to open for all it named as (OpenGL)
+
+Windows made through referencing it
+Direct3D (only for Windows)
+OpenGLES3.2 -> It is stripped down from OpenGL
+WebGL -> It is stripped down from OpenGLES
+
+Direct3D -> Lib made to transfer it's call to OpenGL -> Show on Linux system
+
+monaco engine (photoshop)
+Mercury Playback architecture (CUDA)
+AutoDesk -> 3Ds max (Nitrous Direct3D 11 Nitrous Direct3D 9, Nitrous software, legacy Direct3D, legacy OpenGL)
+Blender -> Cycles (GPU rendering)
+Blender -> EEVEE (CPU rendering)
+Blender -> LuxCore (CPU rendering) / Blender -> LuxCore (GPU rendering)
+Blender -> Cycles (GPU rendering) / Blender -> Cycles (CPU rendering)
+
+Blender Shader language -> GLSL (graphics library shader language)
+game engines -> Unity and Unreal
+
+Higest quality movies (rederman)
+e.g -> piper
+maya internally used rederman
+rederman starts with movies wrath of khan
+(chess khelnara mhatara)

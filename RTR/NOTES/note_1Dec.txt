@@ -1,0 +1,182 @@
+Specification
+RIS (Rederman Specification)
+pixar, pixin has it's own Specification
+The specification is a set of rules that define how to create a 3D model, animation,
+and rendering. It is a blueprint for creating a 3D animation.
+The specification is used to ensure that the 3D animation is created consistently
+and to a high standard. It is also used to communicate the requirements of the
+project to the team members and stakeholders.
+
+C is mother of all modern programming languages
+
+tropics cha demo (sir's 12 lakh line of code)
+
+january february march (seminars)
+
+cpu -> RAM and gpu -> VRAM (video random access memory)
+
+OS che 5 kam : 
+file management, process management, memory management, cpu scheduling,
+Hardware Abstraction (hiding the complexity of Hardware from the user)
+
+os hi hardware la access ch karunach det nahi -> HAL (Hardware Abstraction Layer) (hal.dll, hald, hal.dylib)
+device drivers are the programs in os
+
+sir 27 underlinech ka mhantat ?
+
+    |    |----------------------------------------------------------------
+    |    |gra  |      |open    |
+H/W |    |phics|  OS  |gl      |  | stack | | Data | Text |
+    |    |DD   |      |library |
+    |    |----------------------------------------------------------------
+    HAL                    RAM
+
+picture elements (pixel) -> this particle is phospherous is jwalanshil
+
+R G B (R + G = yellow) (G + B = cyan)
+(R + B = magenta)     ... (einstein got nobel for this called photoelectric effect)
+CRT (cathoid ray tube)
+TFT ()
+LCD ()
+LED (light emitting diode)
+IPS (in plane switching)
+Plasma
+OLED (organic light emitting diode)
+AMOLED (active matrix OLED)
+QLED (quantum dot light emitting diode)
+MicroLED
+NanoLED
+NanoCell
+
+
+
+Book author Van dam
+ntsc (national television standard )
+pal (phase alternating line)
+SECAM (systeme electronique couleur avec memoire)
+HDMI (high definition multimedia interface)
+
+
+opengl library -> (it is in between our program and OS)
+ graphics dd ->
+  gpu ->
+   vram ->
+    color gun ->
+     (pixel) particle ->
+      monitor
+
+
+(our program) -> (os) -> (hal) -> (device driver) -> (graphics dd) -> (gpu) -> (vram) -> (color gun) -> (pixel particle) -> (monitor)
+
+imidiate mode rendering
+retained mode rendering
+
+online mode rendering (RTR)
+offline mode rendering
+
+software mode rendering
+hardware mode rendering
+
+VESA (video electronic standard association)
+Nvidia = nouveau
+AMD = gallium
+Intel = i845
+
+os system ne tayaar kelele s/w sathi che he driver ahet
+
+Qualcomm (Adreno) -> it's anagram of radeon
+ARM (mali)
+Imagination (pvr -> Power Video Rendering)
+
+AMD company ch graphics char ch specification is Radeon
+
+iPhone -> A18 (A stands for ARM)
+
+(rudiantry) ashakta driver 
+
+adreno = freedreno
+mali = lima, panfrost
+powerVR = utgard
+
+mali has 4 architecture
+utgard
+midgard
+bitfrost
+valhall
+
+adreno 750
+
+hardware rendering or direct accelarated rendering
+ARM -> RISC
+intel, AMD -> CISC
+
+GPU 3types (SOC -> system on chip)
+1. integrated GPU (iGPU)
+2. dedicated/discrete GPU (dGPU)   -> ha purvi AGP(accelarated graphics port) madhe basavala jayacha then ISA -> PCI (peripheral component interconnect) -> PCIe (peripheral component interconnect express)
+3. external GPU (eGPU)
+
+dell, davinchi resolve(blackmagic), asus, sonic this companies having manufacture eGPU
+with the thunderbolt cable
+
+it's intel technology
+thunderbolt 4 is latest
+
+Intel cpu -> intel gpu = gma -> irispro -> hd -> uhd -> xe -> arc (it can work iGPU and dGPU)
+Intel gpu + Nvidia gpu = optimus 
+Intel gpu + AMD gpu = powerExpress -> DSG
+AMD CPU +AMD gpu = xenos -> terascale -> GCN (its 3 archit. -> polaris -> vega -> navigation) -> RDNA 
+AMD CPU + Nvidia gpu = xconnect (mainly as eGPU)
+multiple nvidia cards = SLI (serial/scalable link interface)
+multiple AMD cards = crossfire
+
+mobile = opengles caps viewer , gles view = powertech , gl-z/gpu-z
+desktop = glview, gpu-z, cpu-z,
+
+glx info karal tevha kalel -> aishwarya RTR4
+
+
+
+msi mercedes raperlake rasterlake
+
+
+1) windows -> window
+2) linux -> window
+3) macos -> window+view
+4) web -> window + canvas
+5) android -> view
+6) ios -> view
+
+WSI (window system interface)
+
+2 ways
+1) 3rd party library ->
+    glut / freeglut (but this is deprecated) made by mark kilgard (glut) and pawel (freeglut),     ---> win/lin/mac  not for android/ios
+    glfw (graphics library frame work / for) -> in use                                             ---> win/lin/mac not for android/ios
+    SDL (simple direct media layer) -> mainly used in linux
+    VxWorks / WxWidgets
+    Qt                                                                                             ---> win/lin/mac not for android/ios
+2) do it yourself
+
+kunitari tya vedna ghetlyat na mag apan ka nahi karayach (don't be a parasite/bandgul)
+
+windows -> window  --> win32 SDK
+Linux -> window    --> Xlib SDK
+macos -> window + view --> cocoa SDK (objective C)
+web -> window + canvas --> canvas API
+android -> view + surface --> android SDK (java)
+ios -> window + view --> cocoaTouch SDK (objective C)
+                    ^
+                    |
+all this is -> WSI (window system interface)
+
+
+container dakhaun zhala aahe to connec opengl
+we use Bridging API
+windows -> WGL (windows graphics library)
+Linux -> GLX (graphics library xwindws)
+macos -> AGL/CGL (apple graphics library / core graphics library)
+android -> EGL (embedded graphics library)
+ios -> EGL / EAGL (embedded apple graphics library)
+web -> EGL (embedded graphics library)
+
+

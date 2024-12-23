@@ -1,13 +1,13 @@
 // Header Files
 #include <GL/freeglut.h>
-// #include <stdbool.h> // For bool, TRUE, FALSE
+#include <stdbool.h> // For bool, true, false
 
 // Global Variables Declarations
-BOOL bFullScreen = FALSE;
+bool bFullScreen = false;
 
 // Entrypoint Function
 int main(int argc, char *argv[])
-{
+{ // sir called it as a mahirapi kaunsh
     // Local Function Declarations
     int initialize(void);
     void resize(int, int);
@@ -2683,15 +2683,15 @@ void keyboard(unsigned char key, int x, int y)
         break;
     case 'F':
     case 'f':
-        if (bFullScreen == FALSE)
+        if (bFullScreen == false)
         {
             glutFullScreen();
-            bFullScreen = TRUE;
+            bFullScreen = true;
         }
         else
         {
             glutLeaveFullScreen();
-            bFullScreen = FALSE;
+            bFullScreen = false;
         }
         break;
     default:

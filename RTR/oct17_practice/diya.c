@@ -64,7 +64,6 @@ void resize(int width, int height)
 // {
 //     glColor3f(1.0f, 0.0f, 0.0f); // Red color for text
 //     glRasterPos2f(x, y);         // Set text position on screen
-
 //     // Loop over each character and render it
 //     for (const char *c = text; *c != '\0'; ++c)
 //     {
