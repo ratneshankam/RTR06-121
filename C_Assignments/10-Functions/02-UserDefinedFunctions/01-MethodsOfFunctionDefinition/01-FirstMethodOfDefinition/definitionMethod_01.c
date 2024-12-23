@@ -11,6 +11,9 @@ int main(int argc, char *argv[], char *envp[])
     return (0);
 }
 
+// ***** USER DEFINED FUNCTION : METHOD OF DEFINITION 1 *****
+// ***** NO RETURN VALUE, NO PARAMETERS *****
+
 void myAddition(void) // function definition
 {
 
@@ -29,5 +32,5 @@ void myAddition(void) // function definition
     sum_ra = a_ra + b_ra;
 
     printf("\n\n");
-    printf("Sum of %d and %d is : %d", a_ra, b_ra, sum_ra);
+    printf("Sum of %d and %d is : %d\n\n", a_ra, b_ra, sum_ra);
 }

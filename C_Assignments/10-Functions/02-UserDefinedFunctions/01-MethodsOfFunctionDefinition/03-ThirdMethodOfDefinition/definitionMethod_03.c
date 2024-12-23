@@ -1,5 +1,6 @@
 #include <stdio.h> // 'stdio.h' contains declaration of printf()
 
+// Entry point function => main() => valid return type (int) and 3 parameters (int argc, char *argv[], char *envp[])
 int main(int argc, char *argv[], char *envp[])
 {
 
@@ -23,6 +24,9 @@ int main(int argc, char *argv[], char *envp[])
     return (0);
 }
 
+// ***** USER DEFINED FUNCTION : METHOD OF DEFINITION 3 *****
+// ***** NO RETURN VALUE, VALID PARAMETERS (int, int) *****
+
 void myAddition(int a_ra, int b_ra) // function definition
 {
 
@@ -32,5 +36,5 @@ void myAddition(int a_ra, int b_ra) // function definition
     // code
     sum_ra = a_ra + b_ra;
     printf("\n\n");
-    printf("Sum of %d and %d is : %d", a_ra, b_ra, sum_ra);
+    printf("Sum of %d and %d is : %d\n\n", a_ra, b_ra, sum_ra);
 }

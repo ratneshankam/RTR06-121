@@ -17,6 +17,9 @@ int main(int argc, char *argv[], char *envp[])
     return (0);
 }
 
+// ***** USER DEFINED FUNCTION : METHOD OF DEFINITION 2 *****
+// ***** VALID (int) RETURN VALUE, NO PARAMETERS *****
+
 int myAddition(void) // function definition
 {
 

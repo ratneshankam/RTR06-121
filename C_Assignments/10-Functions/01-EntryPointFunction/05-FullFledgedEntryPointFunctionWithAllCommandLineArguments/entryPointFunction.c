@@ -1,7 +1,6 @@
 #include <stdio.h> // 'stdio.h' contains declaration of printf()
 
 // Entry point function => main() => valid return type (int) and 3 parameters (int argc, char *argv[], char *envp[])
-
 int main(int argc, char *argv[], char *envp[])
 {
     // variable declarations

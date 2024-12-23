@@ -1,13 +1,11 @@
 #include <stdio.h> // 'stdio.h' contains declaration of printf()
 
-// ***** USER DEFINED FUNCTIONS : METHOD OF CALLING FUNCTION 1 *****
-// ***** CALLING ALL FUNCTIONS IN main() DIRECTLY *****
+// ***** USER DEFINED FUNCTIONS : METHOD OF CALLING FUNCTION 2 *****
+// ***** CALLING ONLY TWO FUNCTIONS DIRECTLY IN main(), REST OF THE FUNCTION TRACE THEIR CALL INDIRECTLY TO main() *****
 
-// Entry-Point Function => main() => Valid Return Type (int) and 3 Parameters (int argc, char *argv[], char *envp[])
 int main(int argc, char *argv[], char *envp[])
 {
-
-    // function prototypes
+    // function prototypes OR declarations
     void myAddition(void);
     int mySubtraction(void);
     void myMultiplication(int, int);

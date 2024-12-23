@@ -20,10 +20,13 @@ int main(int argc, char *argv[], char *envp[])
 
     result_ra = myAddition(a_ra, b_ra); // function call
     printf("\n\n");
-    printf("Sum of %d and %d is : %d", a_ra, b_ra, result_ra);
+    printf("Sum of %d and %d is : %d\n\n", a_ra, b_ra, result_ra);
 
     return (0);
 }
+
+// ***** USER DEFINED FUNCTION : METHOD OF DEFINITION 4 *****
+// ***** VALID (int) RETURN VALUE, VALID PARAMETERS (int, int) *****
 
 int myAddition(int a_ra, int b_ra) // function definition
 {
