@@ -47,13 +47,14 @@ int main(void)
 
     printf("\n\n");
     printf("The strings in the 2D character array are : \n\n");
+
     for (i_ra = 0; i_ra < strArray_num_rows_ra; i_ra++)
     {
         printf("%s ", strArray_ra[i_ra]);
     }
 
     printf("\n\n");
-  
+
     return (0);
 }
 
@@ -68,11 +69,13 @@ void myStrcpy(char str_destination_ra[], char str_source_ra[])
 
     // code
     istring_length_ra = myStrlen(str_source_ra);
+    
     for (j_ra = 0; j_ra < istring_length_ra; j_ra++)
     {
         (str_destination_ra[j_ra] = str_source_ra[j_ra]);
     }
-    (str_destination_ra[j_ra] == '\0');
+
+    str_destination_ra[j_ra] = '\0';
 }
 
 int myStrlen(char str_ra[])

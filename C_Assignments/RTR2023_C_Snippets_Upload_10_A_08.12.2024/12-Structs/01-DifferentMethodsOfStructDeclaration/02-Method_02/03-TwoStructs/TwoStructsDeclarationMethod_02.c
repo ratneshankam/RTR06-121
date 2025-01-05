@@ -74,7 +74,7 @@ int main(void)
             {
                 point_properties_ra.quadrant_ra = 1;
             }
-            else if (point_ra.x_ra < 0 && point_ra.y > 0) // 'x' is positive and 'y' is negative
+            else if (point_ra.x_ra < 0 && point_ra.y_ra > 0) // 'x' is positive and 'y' is negative
             {
                 point_properties_ra.quadrant_ra = 2;
             }
@@ -87,7 +87,7 @@ int main(void)
                 point_properties_ra.quadrant_ra = 4;
             }
 
-            printf("The point lies in quadrant number %d !!!\n", point_properties_ra.quadrant);
+            printf("The point lies in quadrant number %d !!!\n", point_properties_ra.quadrant_ra);
         }
     }
     

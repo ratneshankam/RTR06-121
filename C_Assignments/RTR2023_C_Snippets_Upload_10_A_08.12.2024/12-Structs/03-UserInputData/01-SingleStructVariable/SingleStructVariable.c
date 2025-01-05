@@ -9,6 +9,7 @@ struct MyData
     double d_ra;
     char ch_ra;
 };
+
 int main(void)
 {
     // variable declarations

@@ -95,5 +95,5 @@ void myStrcpy(char str_destination_ra[], char str_source_ra[])
     {
         (str_destination_ra[j_ra] = str_source_ra[j_ra]);
     }
-    (str_destination_ra[j_ra] == '\0');
+    (str_destination_ra[j_ra] = '\0');
 }

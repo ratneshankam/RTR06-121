@@ -29,7 +29,7 @@ int main(void)
     printf("Number of rows (width) in 3D integer array = %d\n\n", iArray_width_ra);
 
     iArray_height_ra = sizeof(iArray_ra[0]) / sizeof(iArray_ra[0][0]);
-    printf("Number of columns (height) in 3D integer array = %d\n\n", iArray_num_elements_ra);
+    printf("Number of columns (height) in 3D integer array = %d\n\n", iArray_height_ra);
 
     iArray_depth_ra = sizeof(iArray_ra[0][0]) / int_size_ra;
     printf("Depth in 3D integer array = %d\n\n", iArray_depth_ra);

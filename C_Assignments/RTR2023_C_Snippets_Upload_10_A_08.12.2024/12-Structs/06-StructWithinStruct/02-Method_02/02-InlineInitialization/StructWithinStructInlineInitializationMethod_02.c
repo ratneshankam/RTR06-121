@@ -7,7 +7,7 @@ struct MyPoint
 struct Rectangle
 {
     struct MyPoint point_01_ra, point_02_ra;
-}
+};
 
 struct Rectangle rect_ra = {{2, 3}, {5, 6}};
 

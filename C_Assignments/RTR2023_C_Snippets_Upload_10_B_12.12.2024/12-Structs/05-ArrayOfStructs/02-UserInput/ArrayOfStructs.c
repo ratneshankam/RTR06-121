@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 #define NUM_EMPLOYEES 5 // simply change this constant value to have as many number of employee records as you please ...
 
@@ -11,7 +12,7 @@ struct Employee
     int age_ra;
     float salary_ra;
     char sex_ra;
-    char marital_status_ra[MARITAL_STATUS];
+    char marital_status_ra;
 };
 
 int main(void)
@@ -34,27 +35,31 @@ int main(void)
         printf("\n\n");
         printf("Enter employee name : ");
         myGetString(employeeRecord_ra[i_ra].name_ra, NAME_LENGTH);
+
         printf("\n\n");
         printf("Enter employee age (in years): ");
         scanf("%d", &employeeRecord_ra[i_ra].age_ra);
+
         printf("\n\n");
         printf("Enter employee salary (in indian rupees): ");
         scanf("%f", &employeeRecord_ra[i_ra].salary_ra);
+
         printf("\n\n");
-        printf("Enter employee sex (M/F): ");
+        printf("Enter employee sex (M/m for male, F/f for female): ");
         employeeRecord_ra[i_ra].sex_ra = getch();
         printf(" %c", &employeeRecord_ra[i_ra].sex_ra);
         employeeRecord_ra[i_ra].sex_ra = toupper(employeeRecord_ra[i_ra].sex_ra);
-        printf("\n\n");
-        printf("Enter employee marital status (M/S): ");
-    }
 
-    // ******** Employee 1 *********
-    strcpy(employeeRecord_ra[0].name_ra, employee_rajesh_ra);
-    employeeRecord_ra[0].age_ra = 30;
-    employeeRecord_ra[0].sex_ra = 'M';
-    employeeRecord_ra[0].salary_ra = 50000.0f;
-    strcpy(employeeRecord_ra[0].marital_status_ra, "Unmarried");
+        printf("\n\n");
+        printf("Enter employee's salary (in indian rupees): ");
+        scanf("%f", &employeeRecord_ra[i_ra].salary_ra);
+
+        printf("\n\n");
+        printf("Is the employee married? (Y/y for yes, N/n for no): ");
+        employeeRecord_ra[i_ra].marital_status_ra = getch();
+        printf("%c", employeeRecord_ra[i_ra].marital_status_ra);
+        employeeRecord_ra[i_ra].marital_status_ra = toupper(employeeRecord_ra[i_ra].marital_status_ra);
+    }
 
     // *** Display ***
     printf("\n\n\n\n");
@@ -65,25 +70,40 @@ int main(void)
         printf("Name        : %s\n", employeeRecord_ra[i_ra].name_ra);
         printf("Age        : %s\n", employeeRecord_ra[i_ra].age_ra);
 
-        if (employeeRecord_ra[i_ra].sex_ra == 'M' || employeeRecord_ra[i_ra].sex_ra == 'm')
+        if (employeeRecord_ra[i_ra].sex_ra == 'M')
         {
             printf("Sex        : Male\n");
         }
-        else
+        else if (employeeRecord_ra[i_ra].sex_ra == 'F')
         {
             printf("Sex        : Female\n");
         }
+        else
+        {
+            printf("Sex        : Invalid Data Entered\n");
+        }
 
         printf("Salary          : Rs. %f\n", employeeRecord_ra[i_ra].salary_ra);
-        printf("Marital Status : %s\n", employeeRecord_ra[i_ra].marital_status);
 
+        if (employeeRecord_ra[i_ra].marital_status_ra == 'Y')
+        {
+            printf("Marital Status : Married\n");
+        }
+        else if (employeeRecord_ra[i_ra].marital_status_ra == 'N')
+        {
+            printf("Marital Status : Unmarried\n");
+        }
+        else
+        {
+            printf("Marital Status : Invalid Data Entered\n");
+        }
         printf("\n\n");
     }
     return (0);
 }
 
 // *** Simple rudimentary implementation of gets_s() ***
-// *** Implemented due to different behaviour of gets_s() / fgets() / fscanf() on different platforms ***
+// *** Implemented due to different behaviour of get_s() / fgets() / fscanf() on different platforms ***
 // *** Backspace / character deletion and arrow key cursor movement not implemented ***
 
 void myGetString(char str_ra[], int str_size_ra)
@@ -104,10 +124,10 @@ void myGetString(char str_ra[], int str_size_ra)
 
     if (i_ra == str_size_ra)
     {
-        str[i_ra - 1] = '\0';
+        str_ra[i_ra - 1] = '\0';
     }
     else
     {
-        str[i_ra] = '\0';
+        str_ra[i_ra] = '\0';
     }
 }

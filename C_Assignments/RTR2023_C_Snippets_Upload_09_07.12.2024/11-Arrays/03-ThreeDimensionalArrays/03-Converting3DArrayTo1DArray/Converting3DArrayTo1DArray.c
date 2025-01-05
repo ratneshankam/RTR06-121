@@ -34,7 +34,7 @@ int main(void)
             printf("********* Column %d *********", (j_ra + 1));
             for (k_ra = 0; k_ra < DEPTH; k_ra++)
             {
-                printf("iArray[%d][%d][%d] = %d\n", i_ra, j_ra, k_ra, iArray_1D_ra[i_ra][j_ra][k_ra]);
+                printf("iArray[%d][%d][%d] = %d\n", i_ra, j_ra, k_ra, iArray_ra[i_ra][j_ra][k_ra]);
             }
             printf("\n");
         }
@@ -50,18 +50,16 @@ int main(void)
             {
                 iArray_1D_ra[(i_ra * NUM_COLS * DEPTH) + (j_ra * DEPTH) + k_ra] = iArray_ra[i_ra][j_ra][k_ra];
             }
-            printf("\n");
         }
-        printf("\n");
     }
 
     // ********** Display 1D array ***********
-    printf("\n\n\n\n");
+    printf("\n\n");
     printf("Elements in the 1D array : \n\n");
-    for ( i_ra = 0; i_ra < (NUM_ROWS * NUM_COLS * DEPTH); i_ra++)
+    for (i_ra = 0; i_ra < (NUM_ROWS * NUM_COLS * DEPTH); i_ra++)
     {
         printf("iArray_1D_ra[%d] = %d\n", i_ra, iArray_1D_ra[i_ra]);
     }
-    
+
     return (0);
 }

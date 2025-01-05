@@ -6,7 +6,7 @@ struct MyData
     int i_ra;
     float f_ra;
     double d_ra;
-} 
+};
 
 struct MyData  data; // Declaring a single struct variable of type 'struct MyData' globally ...
 
@@ -26,8 +26,8 @@ int main(void)
     printf("\n\n");
     printf("Data members of 'struct MyData' are : \n\n");
     printf("i = %d\n", data.i_ra);
-    printf("f = %d\n", data.f_ra);
-    printf("d = %d\n", data.d_ra);
+    printf("f = %f\n", data.f_ra);
+    printf("d = %lf\n", data.d_ra);
 
     // calculating sizes (in bytes) of the data members of 'struct MyData'
     i_size_ra = sizeof(data.i_ra);

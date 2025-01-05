@@ -4,7 +4,7 @@ int main(void)
 {
     // variable declarations
     int length_ra, breadth_ra, area_ra;
-    
+
     struct MyPoint
     {
         int x_ra, y_ra;
@@ -12,9 +12,9 @@ int main(void)
 
     struct Rectangle
     {
-        struct MyPoint point_01, point_02;
+        struct MyPoint point_01_ra, point_02_ra;
     };
-    struct Rectangle rect;
+    struct Rectangle rect_ra;
 
     // code
     printf("\n\n");

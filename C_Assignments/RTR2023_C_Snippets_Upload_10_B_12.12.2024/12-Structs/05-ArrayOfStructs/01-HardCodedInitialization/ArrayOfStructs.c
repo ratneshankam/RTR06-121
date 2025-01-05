@@ -21,7 +21,7 @@ int main(void)
     char employee_reshma_ra[] = "Reshma";
     char employee_rakesh_ra[] = "Rakesh";
     char employee_ravi_ra[] = "Ravi";
-    char employee_rahul_ra[] = "Rahul";
+    char employee_rina_ra[] = "Rina";
 
     int i_ra;
 
@@ -57,9 +57,9 @@ int main(void)
     strcpy(employeeRecord_ra[0].marital_status_ra, "Married");
 
     // ******** Employee 5 *********
-    strcpy(employeeRecord_ra[0].name_ra, employee_rahul_ra);
+    strcpy(employeeRecord_ra[0].name_ra, employee_rina_ra);
     employeeRecord_ra[0].age_ra = 42;
-    employeeRecord_ra[0].sex_ra = 'M';
+    employeeRecord_ra[0].sex_ra = 'F';
     employeeRecord_ra[0].salary_ra = 73000.0f;
     strcpy(employeeRecord_ra[0].marital_status_ra, "Married");
 
@@ -82,7 +82,7 @@ int main(void)
         }
 
         printf("Salary          : Rs. %f\n", employeeRecord_ra[i_ra].salary_ra);
-        printf("Marital Status : %s\n", employeeRecord_ra[i_ra].marital_status);
+        printf("Marital Status : %s\n", employeeRecord_ra[i_ra].marital_status_ra);
 
         printf("\n\n");
     }
