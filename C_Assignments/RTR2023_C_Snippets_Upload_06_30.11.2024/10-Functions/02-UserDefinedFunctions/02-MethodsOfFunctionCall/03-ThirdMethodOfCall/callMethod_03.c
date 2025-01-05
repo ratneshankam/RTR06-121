@@ -35,6 +35,8 @@ void function_ofAMC(void) // function definition
     void function_surname(void);
 
     // code
+    function_surname();
+
     printf("\n\n");
 
     printf("Of ASTROMEDICOMP");
@@ -46,6 +48,8 @@ void function_surname(void) // function definition
     void function_middleName(void);
 
     // code
+    function_middleName();
+
     printf("\n\n");
 
     printf("Ankam");
@@ -55,7 +59,10 @@ void function_middleName(void) // function definition
 {
     // function declaration
     void function_firstName(void);
+
     // code
+    function_firstName();
+
     printf("\n\n");
 
     printf("Kiran");
@@ -67,6 +74,8 @@ void function_firstName(void) // function definition
     void function_is(void);
 
     // code
+    function_is();
+
     printf("\n\n");
 
     printf("Ratnesh");
@@ -78,6 +87,8 @@ void function_is(void) // function definition
     void function_name(void);
 
     // code
+    function_name();
+
     printf("\n\n");
 
     printf("Is");
@@ -89,6 +100,8 @@ void function_name(void) // function definition
     void function_my(void);
 
     // code
+    function_my();
+
     printf("\n\n");
 
     printf("Name");

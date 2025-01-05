@@ -21,7 +21,8 @@ int main(int argc, char *argv[], char *envp[])
     result_ra = myAddition(a_ra, b_ra); // function call
     printf("\n\n");
     printf("Sum of %d and %d is : %d", a_ra, b_ra, result_ra);
-
+    printf("\n\n");
+    
     return (0);
 }
 
