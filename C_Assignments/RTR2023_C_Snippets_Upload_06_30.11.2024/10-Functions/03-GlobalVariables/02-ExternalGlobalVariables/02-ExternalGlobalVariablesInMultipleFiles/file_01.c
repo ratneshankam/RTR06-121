@@ -14,5 +14,5 @@ void change_count_one(void)
 {
     // code
     global_count_ra += 1;
-    printf("global_count_one() : value of global_count_ra in file_01 = %d\n", global_count_ra);
+    printf("change_count_one() : value of global_count_ra in file_01 = %d\n", global_count_ra);
 }

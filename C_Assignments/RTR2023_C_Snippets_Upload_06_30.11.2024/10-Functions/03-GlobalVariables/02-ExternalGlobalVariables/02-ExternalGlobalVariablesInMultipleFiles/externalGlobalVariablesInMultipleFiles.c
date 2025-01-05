@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "file_01.c"
+#include "file_02.c"
 
 // *** Global Scope ***
 int global_count_ra = 0;
