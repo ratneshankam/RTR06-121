@@ -26,7 +26,7 @@ int main(void)
 
     // code
     // ******* user input initialization of array of 'struct employee' ********
-    for ( i_ra = 0; i_ra < NUM_EMPLOYEES; i_ra++)
+    for (i_ra = 0; i_ra < NUM_EMPLOYEES; i_ra++)
     {
         printf("\n\n\n\n");
         printf("******* Data entry for employee number %d *******\n", (i_ra + 1));
@@ -47,9 +47,8 @@ int main(void)
         employeeRecord_ra[i_ra].sex_ra = toupper(employeeRecord_ra[i_ra].sex_ra);
         printf("\n\n");
         printf("Enter employee marital status (M/S): ");
-        
     }
-    
+
     // ******** Employee 1 *********
     strcpy(employeeRecord_ra[0].name_ra, employee_rajesh_ra);
     employeeRecord_ra[0].age_ra = 30;
@@ -84,7 +83,7 @@ int main(void)
 }
 
 // *** Simple rudimentary implementation of gets_s() ***
-// *** Implemented due to different behaviour of get_s() / fgets() / fscanf() on different platforms ***
+// *** Implemented due to different behaviour of gets_s() / fgets() / fscanf() on different platforms ***
 // *** Backspace / character deletion and arrow key cursor movement not implemented ***
 
 void myGetString(char str_ra[], int str_size_ra)

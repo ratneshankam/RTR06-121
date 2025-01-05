@@ -13,14 +13,13 @@ int main(void)
     char chArray_original_ra[MAX_STRING_LENGTH], chArray_vowelsReplaced_ra[MAX_STRING_LENGTH]; // A character array is a string
     int iStringLength_ra = 0;
     int i_ra = 0;
-    
+
     // code
 
     // *** STRING INPUT ***
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(chArray_original_ra, MAX_STRING_LENGTH);
-
+    gets_s(chArray_original_ra, MAX_STRING_LENGTH);
 
     // *** STRING OUTPUT ***
     myStrcpy(chArray_vowelsReplaced_ra, chArray_original_ra);

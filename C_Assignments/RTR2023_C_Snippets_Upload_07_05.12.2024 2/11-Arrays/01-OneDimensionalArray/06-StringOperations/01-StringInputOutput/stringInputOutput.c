@@ -10,7 +10,7 @@ int main(void)
     // code
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(chArray_ra, MAX_STRING_LENGTH);
+    gets_s(chArray_ra, MAX_STRING_LENGTH);
 
     printf("\n\n");
     printf("String entered by you is : \n\n");

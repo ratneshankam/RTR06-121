@@ -16,12 +16,13 @@ int main(void) {
     // code
     printf("\n\n");
 
-    printf("Size of chArray_01_ra = %lu\n\n", sizeof(chArray_01_ra));
-    printf("Size of chArray_02_ra = %lu\n\n", sizeof(chArray_02_ra));
-    printf("Size of chArray_03_ra = %lu\n\n", sizeof(chArray_03_ra));
-    printf("Size of chArray_04_ra = %lu\n\n", sizeof(chArray_04_ra));
-    printf("Size of chArray_05_ra = %lu\n\n", sizeof(chArray_05_ra));
+    printf("Size of chArray_01_ra = %zu\n\n", sizeof(chArray_01_ra));
+    printf("Size of chArray_02_ra = %zu\n\n", sizeof(chArray_02_ra));
+    printf("Size of chArray_03_ra = %zu\n\n", sizeof(chArray_03_ra));
+    printf("Size of chArray_04_ra = %zu\n\n", sizeof(chArray_04_ra));
+    printf("Size of chArray_05_ra = %zu\n\n", sizeof(chArray_05_ra));
 
     printf("\n\n");
-    printf("Size of chArray_WithoutNullTerminator_ra : %lu\n\n", sizeof(chArray_WithoutNullTerminator_ra));
+    printf("Size of chArray_WithoutNullTerminator_ra : %zu\n\n", sizeof(chArray_WithoutNullTerminator_ra));
     printf("chArray_WithoutNullTerminator_ra : %s\n\n", chArray_WithoutNullTerminator_ra); // will display garbage value at the end of string due to absence
+}

@@ -11,7 +11,7 @@ int main(void)
     // code
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(chArray_ra, MAX_STRING_LENGTH);
+    gets_s(chArray_ra, MAX_STRING_LENGTH);
 
     // *** STRING OUTPUT ***
     printf("\n\n");

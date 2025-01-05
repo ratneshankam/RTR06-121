@@ -19,7 +19,7 @@ int main(void)
     // *** STRING INPUT ***
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(chArray_ra, MAX_STRING_LENGTH);
+    gets_s(chArray_ra, MAX_STRING_LENGTH);
 
     iStringLength_ra = myStrlen(chArray_ra);
 

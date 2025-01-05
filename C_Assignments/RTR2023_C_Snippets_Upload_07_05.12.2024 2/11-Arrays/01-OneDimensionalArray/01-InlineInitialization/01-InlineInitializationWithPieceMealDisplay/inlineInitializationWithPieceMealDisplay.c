@@ -24,16 +24,16 @@ int main(void)
 
     printf("\n\n");
     printf("In-line initialization and piece-meal display of elements of array 'iArray[]' : \n\n");
-    printf("iArray[0] (1st element) = %d\n",iArray_ra[0]);
-    printf("iArray[1] (2nd element) = %d\n",iArray_ra[1]);
-    printf("iArray[2] (2nd element) = %d\n",iArray_ra[2]);
-    printf("iArray[3] (3rd element) = %d\n",iArray_ra[3]);
-    printf("iArray[4] (4th element) = %d\n",iArray_ra[4]);
-    printf("iArray[5] (5th element) = %d\n",iArray_ra[5]);
-    printf("iArray[6] (6th element) = %d\n",iArray_ra[6]);
-    printf("iArray[7] (7th element) = %d\n",iArray_ra[7]);
-    printf("iArray[8] (8th element) = %d\n",iArray_ra[8]);
-    printf("iArray[9] (9th element) = %d\n\n",iArray_ra[9]);
+    printf("iArray[0] (1st element) = %d\n", iArray_ra[0]);
+    printf("iArray[1] (2nd element) = %d\n", iArray_ra[1]);
+    printf("iArray[2] (2nd element) = %d\n", iArray_ra[2]);
+    printf("iArray[3] (3rd element) = %d\n", iArray_ra[3]);
+    printf("iArray[4] (4th element) = %d\n", iArray_ra[4]);
+    printf("iArray[5] (5th element) = %d\n", iArray_ra[5]);
+    printf("iArray[6] (6th element) = %d\n", iArray_ra[6]);
+    printf("iArray[7] (7th element) = %d\n", iArray_ra[7]);
+    printf("iArray[8] (8th element) = %d\n", iArray_ra[8]);
+    printf("iArray[9] (9th element) = %d\n\n", iArray_ra[9]);
 
     int_size_ra = sizeof(int);
     iArray_size_ra = sizeof(iArray_ra);
@@ -54,8 +54,6 @@ int main(void)
     printf("fArray[5] (5th element) = %f\n", fArray_ra[5]);
     printf("fArray[6] (6th element) = %f\n", fArray_ra[6]);
     printf("fArray[7] (7th element) = %f\n", fArray_ra[7]);
-    printf("fArray[8] (8th element) = %f\n", fArray_ra[8]);
-    printf("fArray[9] (9th element) = %f\n\n", fArray_ra[9]);
 
     float_size_ra = sizeof(float);
     fArray_size_ra = sizeof(fArray_ra);
@@ -77,7 +75,10 @@ int main(void)
     printf("cArray[6] (6th element) = %c\n", cArray_ra[6]);
     printf("cArray[7] (7th element) = %c\n", cArray_ra[7]);
     printf("cArray[8] (8th element) = %c\n", cArray_ra[8]);
-    printf("cArray[9] (9th element) = %c\n\n", cArray_ra[9]);
+    printf("cArray[9] (9th element) = %c\n", cArray_ra[9]);
+    printf("cArray[10] (10th element) = %c\n", cArray_ra[10]);
+    printf("cArray[11] (11th element) = %c\n", cArray_ra[11]);
+    printf("cArray[12] (12th element) = %c\n\n", cArray_ra[12]);
 
     char_size_ra = sizeof(char);
     cArray_size_ra = sizeof(cArray_ra);

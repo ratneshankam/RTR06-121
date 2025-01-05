@@ -10,6 +10,11 @@ int main(void)
 
     // code
 
+    // *** STRING INPUT ***
+    printf("\n\n");
+    printf("Enter a string : \n\n");
+    gets_s(chArray_original_ra, MAX_STRING_LENGTH);
+
     // *** STRING OUTPUT ***
     printf("\n\n");
     printf("The original string entered by you (i.e : 'chArray_original[]') is : \n\n");

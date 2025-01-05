@@ -24,7 +24,7 @@ int main(void)
     // *** STRING INPUT ***
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(chArray_ra, MAX_STRING_LENGTH);
+    gets_s(chArray_ra, MAX_STRING_LENGTH);
 
     iStringLength_ra = myStrlen(chArray_ra);
 
@@ -99,7 +99,8 @@ int myStrlen(char str_ra[])
     return (string_length_ra);
 }
 
-char myToUpper(char ch_ra) {
+char myToUpper(char ch_ra)
+{
     // variable declaration
     int num_ra = 0, c_ra = 0;
 
@@ -119,6 +120,5 @@ char myToUpper(char ch_ra) {
         return ((char)c_ra);
     }
     else
-    return (ch_ra);
-
+        return (ch_ra);
 }

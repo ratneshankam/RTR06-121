@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h> // for strrev()
 
 #define MAX_STRING_LENGTH 512
 
@@ -15,7 +14,7 @@ int main(void)
 
     // *** STRING INTPUT ***
     printf("Enter a string: \n\n");
-    get_s(chArray_original_ra, MAX_STRING_LENGTH);
+    gets_s(chArray_original_ra, MAX_STRING_LENGTH);
 
     // *** STRING REVERSE ***
     myStrrev(chArray_reversed_ra, chArray_original_ra);
@@ -27,7 +26,7 @@ int main(void)
 
     printf("\n\n");
     printf("The reversed string (i.e : 'chArray_reverse[]') is : \n\n");
-    printf("%s\n", strrev(chArray_original_ra));
+    printf("%s\n", chArray_reversed_ra);
 
     return (0);
 }
@@ -38,14 +37,23 @@ void myStrrev(char str_destination_ra[], char str_source_ra[])
     int myStrlen(char[]);
 
     // variable declaration
-    int iStringLength_ra = 0 ;
+    int iStringLength_ra = 0;
     int i_ra, j_ra, len_ra;
 
     // code
+    iStringLength_ra = myStrlen(str_source_ra);
+
     // Array indices begin from 0, hence last index will always be(length - 1)
     len_ra = iStringLength_ra - 1;
 
-    // we need to put the character which is at last index of 'str_sourc' to the first index
+    // We need to put the character which is at last index of 'str_source' to the first index of 'str_destination'
+    // And second-last character of 'str_source' to the second character of 'str_destination' and so on ...
+    for (i_ra = 0, j_ra = len_ra; i_ra < iStringLength_ra, j_ra >= 0; i_ra++, j_ra--)
+    {
+        str_destination_ra[i_ra] = str_source_ra[j_ra];
+    }
+
+    str_destination_ra[i_ra] = '\0';
 }
 
 int myStrlen(char str_ra[])

@@ -70,7 +70,7 @@ int main(void)
     cArray_size_ra = sizeof(cArray_ra);
     cArray_num_elements_ra = cArray_size_ra / char_size_ra;
 
-    for (i_ra = 0; i_ra < fArray_num_elements_ra; i_ra++)
+    for (i_ra = 0; i_ra < cArray_num_elements_ra; i_ra++)
     {
 
         printf("cArray[%d] (Element %d) = %c\n", i_ra, (i_ra + 1), cArray_ra[i_ra]);

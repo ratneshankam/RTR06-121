@@ -16,11 +16,11 @@ int main(void)
     // *** STRING INTPUT ***
     printf("\n\n");
     printf("Enter first string: \n\n");
-    get_s(chArray_one, MAX_STRING_LENGTH);
+    gets_s(chArray_one, MAX_STRING_LENGTH);
 
     printf("\n\n");
     printf("Enter second string: \n\n");
-    get_s(chArray_two, MAX_STRING_LENGTH);
+    gets_s(chArray_two, MAX_STRING_LENGTH);
 
     // *** STRING CONCAT ***
     printf("\n\n");
@@ -65,7 +65,8 @@ void myStrcat(char str_destination_ra[], char str_source_ra[])
     // so, concatenation must begin from index number equal to length of the array 'str_destination'
     // we need to put the character which is at first index of 'str_source' to the (last index + 1) of 'str_destination'
 
-    for (i_ra = iStringLength_destination_ra, j_ra = 0; j_ra<iStringLength_source_ra; i_ra++, j_ra++) {
+    for (i_ra = iStringLength_destination_ra, j_ra = 0; j_ra < iStringLength_source_ra; i_ra++, j_ra++)
+    {
         str_destination_ra[i_ra] = str_source_ra[j_ra];
     }
 

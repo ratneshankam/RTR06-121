@@ -15,7 +15,7 @@ int main(void)
     // *** STRING INPUT ***
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(chArray_original_ra, MAX_STRING_LENGTH);
+    gets_s(chArray_original_ra, MAX_STRING_LENGTH);
 
     // *** STRING COPY ***
     myStrcpy(chArray_copy_ra, chArray_original_ra);
@@ -26,7 +26,8 @@ int main(void)
     printf("%s\n", chArray_original_ra);
 
     printf("\n\n");
-    printf("The copied string (i.e : 'chArray_copy[]' is : \n", chArray_copy_ra);
+    printf("The copied string (i.e : 'chArray_copy[]' is : \n\n");
+    printf("%s\n", chArray_copy_ra);
 
     return (0);
 }
@@ -49,7 +50,8 @@ void myStrcpy(char str_destination_ra[], char str_source_ra[])
     (str_destination_ra[j_ra] == '\0');
 }
 
-int myStrlen(char str_ra[]) {
+int myStrlen(char str_ra[])
+{
     // variable declarations
     int j_ra;
     int string_length_ra = 0;
