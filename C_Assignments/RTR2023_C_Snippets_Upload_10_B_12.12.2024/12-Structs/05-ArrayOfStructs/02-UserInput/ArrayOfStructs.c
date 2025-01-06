@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-#define NUM_EMPLOYEES 5 // simply change this constant value to have as many number of employee records as you please ...
+#define NUM_EMPLOYEES 3 // simply change this constant value to have as many number of employee records as you please ...
 
 #define NAME_LENGTH 100
 #define MARITAL_STATUS 10
@@ -100,7 +100,7 @@ int main(void)
 }
 
 // *** Simple rudimentary implementation of gets_s() ***
-// *** Implemented due to different behaviour of get_s() / fgets() / fscanf() on different platforms ***
+// *** Implemented due to different behaviour of gets_s() / fgets() / fscanf() on different platforms ***
 // *** Backspace / character deletion and arrow key cursor movement not implemented ***
 
 void myGetString(char str_ra[], int str_size_ra)
@@ -128,4 +128,3 @@ void myGetString(char str_ra[], int str_size_ra)
         str_ra[i_ra] = '\0';
     }
 }
-

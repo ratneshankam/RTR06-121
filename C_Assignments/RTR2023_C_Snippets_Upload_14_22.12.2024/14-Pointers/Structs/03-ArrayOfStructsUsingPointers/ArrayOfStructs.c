@@ -124,7 +124,7 @@ int main(void)
 }
 
 // *** Simple rudimentary implementation of gets_s() ***
-// *** Implemented due to different behaviour of get_s() / fgets() / fscanf() on different platforms ***
+// *** Implemented due to different behaviour of gets_s() / fgets() / fscanf() on different platforms ***
 // *** Backspace / character deletion and arrow key cursor movement not implemented ***
 
 void myGetString(char str_ra[], int str_size_ra)

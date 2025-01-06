@@ -57,14 +57,14 @@ int main(void)
     else if (option_ra == 'D' || option_ra == 'd')
     {
         printf("Enter Option In Character  \n\n");
-        printf("'Q' or 'q' or '/' For Quotient Upon Division  ");
+        printf("'Q' or 'q' or '/' For Quotient Upon Division & 'R' or 'r' or '%%' For Remainder Upon Division\n\n");
 
         printf("Enter Option  ");
         option_division_ra = getch();
 
         printf("\n\n");
 
-        if (option_ra == 'Q' || option_ra == 'q' || option_ra == '/')
+        if (option_division_ra == 'Q' || option_division_ra == 'q' || option_division_ra == '/')
         {
             if (a_ra >= b_ra)
             {

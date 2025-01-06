@@ -55,7 +55,7 @@ int main(void)
 
     // *** data 3 ***
     printf("\n\n\n\n");
-    printf("***** Data 2 *****\n\n");
+    printf("***** Data 3 *****\n\n");
     printf("Enter integer value for 'i_ra' of 'struct MyData data3_ra' : ");
     scanf("%d", &data3_ra.i_ra);
 

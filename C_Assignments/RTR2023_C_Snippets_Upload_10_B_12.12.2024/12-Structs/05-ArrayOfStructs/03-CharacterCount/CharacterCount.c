@@ -49,7 +49,7 @@ int main(void)
     // code
     printf("\n\n");
     printf("Enter a string : \n\n");
-    get_s(str_ra, MAX_STRING_LENGTH);
+    gets_s(str_ra, MAX_STRING_LENGTH);
 
     actual_string_length_ra = strlen(str_ra);
 

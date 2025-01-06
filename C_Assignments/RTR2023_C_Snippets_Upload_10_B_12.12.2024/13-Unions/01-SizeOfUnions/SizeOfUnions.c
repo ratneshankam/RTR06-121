@@ -24,9 +24,9 @@ int main(void)
 
     // code
     printf("\n\n");
-    printf("Size of MyStruct = %lu\n", sizeof(s_ra));
+    printf("Size of MyStruct = %zu\n", sizeof(s_ra));
     printf("\n\n");
-    printf("Size of MyUnion = %lu\n", sizeof(u_ra));
-  
+    printf("Size of MyUnion = %zu\n", sizeof(u_ra));
+
     return (0);
 }

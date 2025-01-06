@@ -29,7 +29,7 @@ int main(void)
 
     MY_CHAR ch_ra = '*';
     MY_CHAR chArray_01_ra[] = "Hello";
-    MY_CHAR chArray_02_ra[] = {"RTR", "Batch", "2024-25"};
+    MY_CHAR chArray_02_ra[][10] = {"RTR", "Batch", "2024-25"};
 
     MY_DOUBLE d_ra = 8.0534904;
 
@@ -45,7 +45,7 @@ int main(void)
     printf("Type MY_INT variable a = %d\n", a_ra);
 
     printf("\n\n");
-    for ( i_ra = 0; i_ra < (sizeof(iArray_ra) / sizeof(int)); i_ra++)
+    for (i_ra = 0; i_ra < (sizeof(iArray_ra) / sizeof(int)); i_ra++)
     {
         printf("Type MY_INT array variable iArray_ra[%d] = %d\n", i_ra, iArray_ra[i_ra]);
     }
@@ -55,16 +55,16 @@ int main(void)
     printf("Type MY_FLOAT constant f_pi = %f\n", f_pi_ra);
 
     printf("\n\n");
-    printf("Type MY_DOUBLE variable d = %lf\n", d_ra);
+    printf("Type MY_DOUBLE variable d = %d\n", d_ra);
 
     printf("\n\n");
     printf("Type MY_CHAR variable ch = %c\n", ch_ra);
-    
+
     printf("\n\n");
     printf("Type MY_CHAR array variable chArray_01_ra = %s\n", chArray_01_ra);
 
     printf("\n\n");
-    for ( i_ra = 0; i_ra < (sizeof(chArray_02_ra) / sizeof(chArray_02_ra[0])); i_ra++)
+    for (i_ra = 0; i_ra < (sizeof(chArray_02_ra) / sizeof(chArray_02_ra[0])); i_ra++)
     {
         printf("%s\t", chArray_02_ra[i_ra]);
     }
@@ -78,7 +78,7 @@ int main(void)
     MY_INT x_ra = 90;
     MY_INT y_ra = 30;
     MY_INT ret_ra;
-    
+
     ret_ra = add(x_ra, y_ra);
     printf("ret_ra = %d\n\n", ret_ra);
 

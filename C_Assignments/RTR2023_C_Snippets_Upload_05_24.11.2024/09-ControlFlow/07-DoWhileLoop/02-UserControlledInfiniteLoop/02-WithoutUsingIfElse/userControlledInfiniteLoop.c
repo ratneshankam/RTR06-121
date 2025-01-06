@@ -21,11 +21,11 @@ int main(void)
             printf("\n");
             printf("In Loop...\n");
             ch_ra = getch(); // control flow waits for character input ...
-        } while (ch_ra != 'Q' || ch_ra != 'q');
+        } while (ch_ra != 'Q' && ch_ra != 'q');
 
         printf("\n\n");
         printf("EXITING USER CONTROLLED INFINITE LOOP...");
-        
+
         printf("\n\n");
         printf("DO YOU WANT TO BEGIN USER CONTROLLED INFINITE LOOP AGAIN?...(Y/Y - Yes, any other key - No) : ");
         option_ra = getch();
