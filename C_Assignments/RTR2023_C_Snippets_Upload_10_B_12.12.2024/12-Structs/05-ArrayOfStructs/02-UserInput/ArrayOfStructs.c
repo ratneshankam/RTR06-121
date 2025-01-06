@@ -41,13 +41,9 @@ int main(void)
         scanf("%d", &employeeRecord_ra[i_ra].age_ra);
 
         printf("\n\n");
-        printf("Enter employee salary (in indian rupees): ");
-        scanf("%f", &employeeRecord_ra[i_ra].salary_ra);
-
-        printf("\n\n");
         printf("Enter employee sex (M/m for male, F/f for female): ");
         employeeRecord_ra[i_ra].sex_ra = getch();
-        printf(" %c", &employeeRecord_ra[i_ra].sex_ra);
+        printf(" %c", employeeRecord_ra[i_ra].sex_ra);
         employeeRecord_ra[i_ra].sex_ra = toupper(employeeRecord_ra[i_ra].sex_ra);
 
         printf("\n\n");
@@ -68,7 +64,7 @@ int main(void)
     {
         printf("****** Employee number %d ******\n\n", (i_ra + 1));
         printf("Name        : %s\n", employeeRecord_ra[i_ra].name_ra);
-        printf("Age        : %s\n", employeeRecord_ra[i_ra].age_ra);
+        printf("Age        : %d\n", employeeRecord_ra[i_ra].age_ra);
 
         if (employeeRecord_ra[i_ra].sex_ra == 'M')
         {
@@ -99,6 +95,7 @@ int main(void)
         }
         printf("\n\n");
     }
+
     return (0);
 }
 
@@ -131,3 +128,4 @@ void myGetString(char str_ra[], int str_size_ra)
         str_ra[i_ra] = '\0';
     }
 }
+

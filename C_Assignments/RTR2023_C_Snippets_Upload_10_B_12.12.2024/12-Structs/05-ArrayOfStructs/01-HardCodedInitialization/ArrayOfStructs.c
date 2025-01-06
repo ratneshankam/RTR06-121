@@ -36,32 +36,32 @@ int main(void)
     strcpy(employeeRecord_ra[0].marital_status_ra, "Unmarried");
 
     // ******** Employee 2 *********
-    strcpy(employeeRecord_ra[0].name_ra, employee_reshma_ra);
-    employeeRecord_ra[0].age_ra = 32;
-    employeeRecord_ra[0].sex_ra = 'F';
-    employeeRecord_ra[0].salary_ra = 60000.0f;
-    strcpy(employeeRecord_ra[0].marital_status_ra, "Married");
+    strcpy(employeeRecord_ra[1].name_ra, employee_reshma_ra);
+    employeeRecord_ra[1].age_ra = 32;
+    employeeRecord_ra[1].sex_ra = 'F';
+    employeeRecord_ra[1].salary_ra = 60000.0f;
+    strcpy(employeeRecord_ra[1].marital_status_ra, "Married");
 
     // ******** Employee 3 *********
-    strcpy(employeeRecord_ra[0].name_ra, employee_rakesh_ra);
-    employeeRecord_ra[0].age_ra = 29;
-    employeeRecord_ra[0].sex_ra = 'M';
-    employeeRecord_ra[0].salary_ra = 62000.0f;
-    strcpy(employeeRecord_ra[0].marital_status_ra, "Unmarried");
+    strcpy(employeeRecord_ra[2].name_ra, employee_rakesh_ra);
+    employeeRecord_ra[2].age_ra = 29;
+    employeeRecord_ra[2].sex_ra = 'M';
+    employeeRecord_ra[2].salary_ra = 62000.0f;
+    strcpy(employeeRecord_ra[2].marital_status_ra, "Unmarried");
 
     // ******** Employee 4 *********
-    strcpy(employeeRecord_ra[0].name_ra, employee_ravi_ra);
-    employeeRecord_ra[0].age_ra = 37;
-    employeeRecord_ra[0].sex_ra = 'M';
-    employeeRecord_ra[0].salary_ra = 57000.0f;
-    strcpy(employeeRecord_ra[0].marital_status_ra, "Married");
+    strcpy(employeeRecord_ra[3].name_ra, employee_ravi_ra);
+    employeeRecord_ra[3].age_ra = 37;
+    employeeRecord_ra[3].sex_ra = 'M';
+    employeeRecord_ra[3].salary_ra = 57000.0f;
+    strcpy(employeeRecord_ra[3].marital_status_ra, "Married");
 
     // ******** Employee 5 *********
-    strcpy(employeeRecord_ra[0].name_ra, employee_rina_ra);
-    employeeRecord_ra[0].age_ra = 42;
-    employeeRecord_ra[0].sex_ra = 'F';
-    employeeRecord_ra[0].salary_ra = 73000.0f;
-    strcpy(employeeRecord_ra[0].marital_status_ra, "Married");
+    strcpy(employeeRecord_ra[4].name_ra, employee_rina_ra);
+    employeeRecord_ra[4].age_ra = 42;
+    employeeRecord_ra[4].sex_ra = 'F';
+    employeeRecord_ra[4].salary_ra = 73000.0f;
+    strcpy(employeeRecord_ra[4].marital_status_ra, "Married");
 
     // *** Display ***
     printf("\n\n");
@@ -70,7 +70,7 @@ int main(void)
     {
         printf("****** Employee number %d ******\n\n", (i_ra + 1));
         printf("Name        : %s\n", employeeRecord_ra[i_ra].name_ra);
-        printf("Age        : %s\n", employeeRecord_ra[i_ra].age_ra);
+        printf("Age        : %d\n", employeeRecord_ra[i_ra].age_ra);
 
         if (employeeRecord_ra[i_ra].sex_ra == 'M' || employeeRecord_ra[i_ra].sex_ra == 'm')
         {
