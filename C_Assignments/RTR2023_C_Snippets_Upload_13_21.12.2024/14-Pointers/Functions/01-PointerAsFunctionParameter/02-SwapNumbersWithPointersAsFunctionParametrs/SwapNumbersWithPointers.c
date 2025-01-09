@@ -35,7 +35,7 @@ int main(void)
 // Address of 'a_ra' is copied into 'x_ra' and Address of 'b_ra' is copied into 'y_ra' ... So, '&a_ra' and 'x_ra' are pointing to One and the same address and '&b' and 'y_ra' are pointing to one and the same address ...
 // Swapping takes place between 'value at address of x_ra' and 'value at address of y_ra'
 // Hence, swapping in this case takes place between '*x' and '*y' as well as between 'a_ra' and 'b_ra' ...
-void swapNumber(int *x_ra, int *y_ra)
+void swapNumbers(int *x_ra, int *y_ra)
 {
     // variable declarations
     int temp_ra;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Defining Struct
 struct MyData
@@ -35,21 +36,21 @@ int main(void)
     }
 
     // Assigning data values to the data members of 'struct MyData'
-    pData_ra -> i_ra = 30;
-    pData_ra -> f_ra = 11.45f;
-    pData_ra -> d_ra = 1.29995;
+    pData_ra->i_ra = 30;
+    pData_ra->f_ra = 11.45f;
+    pData_ra->d_ra = 1.29995;
 
     // Displaying values of the data members of 'struct MyData'
     printf("\n\n");
     printf("Data members of 'struct MyData' are : \n");
-    printf("i_ra = %d\n", pData_ra -> i_ra);
-    printf("f_ra = %f\n", pData_ra -> f_ra);
-    printf("d_ra = %lf\n", pData_ra -> d_ra);
+    printf("i_ra = %d\n", pData_ra->i_ra);
+    printf("f_ra = %f\n", pData_ra->f_ra);
+    printf("d_ra = %lf\n", pData_ra->d_ra);
 
     // Calculating sizes (In bytes) of the data members of 'struct MyData'
-    i_size_ra = sizeof(pData_ra -> i_ra);
-    f_size_ra = sizeof(pData_ra -> f_ra);
-    d_size_ra = sizeof(pData_ra -> d_ra);
+    i_size_ra = sizeof(pData_ra->i_ra);
+    f_size_ra = sizeof(pData_ra->f_ra);
+    d_size_ra = sizeof(pData_ra->d_ra);
 
     // Displaying sizes (In bytes) of the data members of 'struct MyData'
     printf("\n\n");

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 #define NAME_LENGTH 100
 #define MARITAL_STATUS 10
@@ -60,12 +61,8 @@ int main(void)
         printf("\n\n");
         printf("Enter employee sex (M/m for male, F/f for female): ");
         pEmployeeRecord_ra[i_ra].sex_ra = getch();
-        printf(" %c", &pEmployeeRecord_ra[i_ra].sex_ra);
+        printf(" %c", pEmployeeRecord_ra[i_ra].sex_ra);
         pEmployeeRecord_ra[i_ra].sex_ra = toupper(pEmployeeRecord_ra[i_ra].sex_ra);
-
-        printf("\n\n");
-        printf("Enter employee's salary (in indian rupees): ");
-        scanf("%f", &pEmployeeRecord_ra[i_ra].salary_ra);
 
         printf("\n\n");
         printf("Is the employee married? (Y/y for yes, N/n for no): ");
@@ -81,7 +78,7 @@ int main(void)
     {
         printf("****** Employee number %d ******\n\n", (i_ra + 1));
         printf("Name        : %s\n", pEmployeeRecord_ra[i_ra].name_ra);
-        printf("Age        : %s\n", pEmployeeRecord_ra[i_ra].age_ra);
+        printf("Age        : %d\n", pEmployeeRecord_ra[i_ra].age_ra);
 
         if (pEmployeeRecord_ra[i_ra].sex_ra == 'M')
         {

@@ -20,6 +20,11 @@ int main(void)
 
     // code
     ptrAddTwoIntegers_ra = addIntegers;
+    iAnswer_ra = ptrAddTwoIntegers_ra(9, 30);
+    printf("\n\n");
+    printf("Sum of integers = %d\n", iAnswer_ra);
+
+    ptrFunc_ra = subtractIntegers;
     iAnswer_ra = ptrFunc_ra(9, 30);
     printf("\n\n");
     printf("Substration of integers = %d\n", iAnswer_ra);

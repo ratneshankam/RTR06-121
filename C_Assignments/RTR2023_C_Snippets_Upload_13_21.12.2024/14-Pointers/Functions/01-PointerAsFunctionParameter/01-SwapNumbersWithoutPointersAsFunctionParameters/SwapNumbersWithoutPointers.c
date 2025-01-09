@@ -33,7 +33,7 @@ int main(void)
 }
 
 // value of 'a_ra' is copied into 'x_ra' and value of 'b_ra' is copied into 'y_ra' ... swapping takes place between 'x_ra' and 'y_ra', not between 'a_ra' and 'b_ra' ...
-void swapNumber(int x_ra, int y_ra)
+void swapNumbers(int x_ra, int y_ra)
 {
     // variable declarations
     int temp_ra;

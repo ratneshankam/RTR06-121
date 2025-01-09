@@ -33,15 +33,15 @@ int main(void)
     printf("*** Using pointer as pointer i.e : value of xth element of iArray_ra : *(ptr_iArray_ra + x) and address of xth element of iArray_ra : (ptr_iArray_ra + x) ***\n");
     printf("Integer array elements and their addresses : \n\n");
     printf("*(ptr_iArray_ra + 0) = %d \t at address (ptr_iArray_ra + 0) : %p\n", *(ptr_iArray_ra + 0), (ptr_iArray_ra + 0));
-    printf("*(ptr_iArray_ra + 1) = %d \t at address (ptr_iArray_ra + 1) = %d\n", *(ptr_iArray_ra + 1), (ptr_iArray_ra + 1));
-    printf("*(ptr_iArray_ra + 2) = %d \t at address (ptr_iArray_ra + 2) = %d\n", *(ptr_iArray_ra + 2), (ptr_iArray_ra + 2));
-    printf("*(ptr_iArray_ra + 3) = %d \t at address (ptr_iArray_ra + 3) = %d\n", *(ptr_iArray_ra + 3), (ptr_iArray_ra + 3));
-    printf("*(ptr_iArray_ra + 4) = %d \t at address (ptr_iArray_ra + 4) = %d\n", *(ptr_iArray_ra + 4), (ptr_iArray_ra + 4));
-    printf("*(ptr_iArray_ra + 5) = %d \t at address (ptr_iArray + 5) = %d\n", *(ptr_iArray_ra + 5), (ptr_iArray_ra + 5));
-    printf("*(ptr_iArray_ra + 6) = %d \t at address (ptr_iArray_ra + 6) = %d\n", *(ptr_iArray_ra + 6), (ptr_iArray_ra + 6));
-    printf("*(ptr_iArray_ra + 7) = %d \t at address (ptr_iArray_ra + 7) = %d\n", *(ptr_iArray_ra + 7), (ptr_iArray_ra + 7));
-    printf("*(ptr_iArray_ra + 8) = %d \t at address (ptr_iArray_ra + 8) = %d\n", *(ptr_iArray_ra + 8), (ptr_iArray_ra + 8));
-    printf("*(ptr_iArray_ra + 9) = %d \t at address (ptr_iArray_ra + 9) = %d\n", *(ptr_iArray_ra + 9), (ptr_iArray_ra + 9));
+    printf("*(ptr_iArray_ra + 1) = %d \t at address (ptr_iArray_ra + 1) = %p\n", *(ptr_iArray_ra + 1), (ptr_iArray_ra + 1));
+    printf("*(ptr_iArray_ra + 2) = %d \t at address (ptr_iArray_ra + 2) = %p\n", *(ptr_iArray_ra + 2), (ptr_iArray_ra + 2));
+    printf("*(ptr_iArray_ra + 3) = %d \t at address (ptr_iArray_ra + 3) = %p\n", *(ptr_iArray_ra + 3), (ptr_iArray_ra + 3));
+    printf("*(ptr_iArray_ra + 4) = %d \t at address (ptr_iArray_ra + 4) = %p\n", *(ptr_iArray_ra + 4), (ptr_iArray_ra + 4));
+    printf("*(ptr_iArray_ra + 5) = %d \t at address (ptr_iArray + 5) = %p\n", *(ptr_iArray_ra + 5), (ptr_iArray_ra + 5));
+    printf("*(ptr_iArray_ra + 6) = %d \t at address (ptr_iArray_ra + 6) = %p\n", *(ptr_iArray_ra + 6), (ptr_iArray_ra + 6));
+    printf("*(ptr_iArray_ra + 7) = %d \t at address (ptr_iArray_ra + 7) = %p\n", *(ptr_iArray_ra + 7), (ptr_iArray_ra + 7));
+    printf("*(ptr_iArray_ra + 8) = %d \t at address (ptr_iArray_ra + 8) = %p\n", *(ptr_iArray_ra + 8), (ptr_iArray_ra + 8));
+    printf("*(ptr_iArray_ra + 9) = %d \t at address (ptr_iArray_ra + 9) = %p\n", *(ptr_iArray_ra + 9), (ptr_iArray_ra + 9));
 
     return (0);
 }
