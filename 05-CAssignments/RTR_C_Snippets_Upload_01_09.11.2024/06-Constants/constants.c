@@ -99,9 +99,9 @@ int main(void)
 	printf("DECEMBER is Month number = %d\n", DECEMBER);
 
 	printf("Value of True is = %d\n", TRUE);
-	printf("Value of False is = %d\n", TRUE);
+	printf("Value of False is = %d\n", FALSE);
 
-	printf("My_pi Macro value = %.101f\n\n", MY_PI);
+	printf("My_pi Macro value = %.10lf\n\n", MY_PI);
 
 	// pi * r * r = area of circle of radius 'r'
 	printf("Area of Circle of Radius 2 units = %f\n\n", (MY_PI * 2.0f * 2.0f));
