@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> // contains prototypes of malloc() and free()
+#include <stdlib.h>
 
 #define NUM_ROWS 5
 #define NUM_COLS 3
@@ -10,9 +10,6 @@ int main(void)
     int i_ra, j_ra;
     int **ptr_iArray_ra = NULL;
 
-    unsigned int intArrayLength_ra = 0;
-    int i_ra;
-
     // code
     // *** Every row of a 2D array is an integer array itself comprising of 'NUM_COLS' integer elements ***
     // *** There are 5 rows and 3 columns in a 2D integer array. each of the 5 rows is a 1D array of 3 integers ***
@@ -20,7 +17,7 @@ int main(void)
     printf("\n\n");
 
     // *** Memory Allocation ***
-    ptr_iArray_ra = (int *)malloc(NUM_ROWS * sizeof(int *)); // ptr_iArray_ra is the name and base address of the 1D array conaining 5 integer pointers to 5 integer arrays ... so it is an array containing elements of data type (int *)
+    ptr_iArray_ra = (int **)malloc(NUM_ROWS * sizeof(int *)); // ptr_iArray_ra is the name and base address of the 1D array conaining 5 integer pointers to 5 integer arrays ... so it is an array containing elements of data type (int *)
     if (ptr_iArray_ra == NULL)
     {
         printf("\n\n");
@@ -59,7 +56,7 @@ int main(void)
     }
 
     // *** Displaying Values ***
-    prinf("\n\n");
+    printf("\n\n");
     printf("2D integer array elements along with addresses : \n\n");
     for (i_ra = 0; i_ra < NUM_ROWS; i_ra++)
     {

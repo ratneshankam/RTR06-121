@@ -5,7 +5,7 @@ int main(void)
     // variable declarations
     int num_ra;
     int *ptr_ra = NULL;
-    int **pptr_ra = NULL;    // declaration method 1 :- **pptr is a variable of type 'int'
+    int **pptr_ra = NULL; // declaration method 1 :- **pptr is a variable of type 'int'
 
     // code
     num_ra = 10;
@@ -46,7 +46,7 @@ int main(void)
     printf("Value of 'num_ra' : %d\n", num_ra);
     printf("Address of 'num_ra' : %p\n", ptr_ra);
     printf("Address of 'ptr_ra' : %p\n", pptr_ra);
-    printf("Value at address of 'ptr_ra' : %d\n", *pptr_ra);
+    printf("Value at address of 'ptr_ra' : %p\n", *pptr_ra);
     printf("Value at address of 'num_ra' : %d\n", **pptr_ra);
 
     return (0);

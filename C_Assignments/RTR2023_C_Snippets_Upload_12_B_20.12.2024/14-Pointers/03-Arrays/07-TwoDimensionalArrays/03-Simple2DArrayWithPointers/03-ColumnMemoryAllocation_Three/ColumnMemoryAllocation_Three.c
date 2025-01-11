@@ -44,7 +44,7 @@ int main(void)
         }
     }
 
-    prinf("\n\n");
+    printf("\n\n");
     printf("Displaying 2D Array : \n\n");
     for (i_ra = 0; i_ra < NUM_ROWS; i_ra++)
     {

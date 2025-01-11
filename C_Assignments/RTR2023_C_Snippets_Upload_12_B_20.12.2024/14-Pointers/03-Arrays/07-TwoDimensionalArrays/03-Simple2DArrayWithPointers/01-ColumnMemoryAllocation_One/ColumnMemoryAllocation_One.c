@@ -37,13 +37,13 @@ int main(void)
     }
 
     // *** Displaying 2D Array ***
-    prinf("\n\n");
+    printf("\n\n");
     printf("Displaying 2D Array : \n\n");
     for (i_ra = 0; i_ra < NUM_ROWS; i_ra++)
     {
         for (j_ra = 0; j_ra < NUM_COLS; j_ra++)
         {
-            printf("iArray_ra[%d][%d] = %d\n", i_ra, j_ra, iArray_ra[i_ra]);
+            printf("iArray_ra[%d][%d] = %d\n", i_ra, j_ra, iArray_ra[i_ra][j_ra]);
         }
         printf("\n\n");
     }

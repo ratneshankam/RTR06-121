@@ -25,7 +25,7 @@ int main(void)
     }
 
     printf("\n\n");
-    printf("The %u elements entered by you in the integer array : \n\n");
+    printf("The %u elements entered by you in the integer array : \n\n", num_elements_ra);
     for (i_ra = 0; i_ra < num_elements_ra; i_ra++)
     {
         printf("%u\n", piArray_ra[i_ra]);
@@ -51,5 +51,5 @@ void MyAlloc(int **ptr_ra, unsigned int numOfElements_ra)
         printf("Could not allocate memory!!! Exitting now ...\n\n");
         exit(0);
     }
-    printf("MyAlloc() has successfully allocated %lu bytes for integer array !!!\n", (numOfElements_ra * sizeof(int)));
+    printf("MyAlloc() has successfully allocated %zu bytes for integer array !!!\n", (numOfElements_ra * sizeof(int)));
 }

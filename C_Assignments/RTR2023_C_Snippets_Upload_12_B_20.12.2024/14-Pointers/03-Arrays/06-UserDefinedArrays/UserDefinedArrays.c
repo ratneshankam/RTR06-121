@@ -123,7 +123,7 @@ int main(void)
     for (i_ra = 0; i_ra < charArrayLength_ra; i_ra++)
     {
         *(ptr_cArray_ra + i_ra) = getch();
-        scanf("%c\n", *(ptr_cArray_ra + i_ra));
+        // scanf("%c\n", *(ptr_cArray_ra + i_ra));
     }
 
     // ********** DISPLAY OF ARRAYS ************
@@ -189,6 +189,6 @@ int main(void)
         printf("\n\n");
         printf("Memory occupied by integer array has been freed successfully !!!\n\n");
     }
-    
+
     return (0);
 }

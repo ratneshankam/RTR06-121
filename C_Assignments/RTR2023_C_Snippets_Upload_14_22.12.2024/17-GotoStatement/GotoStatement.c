@@ -14,7 +14,7 @@ int main(void)
 
     ch_ra = toupper(ch_ra);
 
-    for (ch_i_ra = 0; ch_i_ra < 'Z'; ch_i_ra++)
+    for (ch_i_ra = 'A'; ch_i_ra <= 'Z'; ch_i_ra++)
     {
         if (ch_i_ra == ch_ra)
         {
@@ -35,7 +35,7 @@ result_ouput_ra: // label itself does not alter flow of program, following code 
     }
     else
     {
-        printf("You must have a strange name! could not find the character '%c' in the entire english alphabet!\n", ch_ra);
+        printf("Character '%c' found. It has ASCII value %u.\n", ch_ra, ascii_ch_ra);
     }
     printf("\n\n");
 

@@ -32,7 +32,6 @@ int main(void)
     else
     {
         printf("Memory allocation to %d rows of 2D integer array Succeeded !!!\n", num_rows_ra);
-        exit(0);
     }
 
     // *** Allocating memory to each row which is a 1D array containing consisting of columns which contain the actual integers ***
